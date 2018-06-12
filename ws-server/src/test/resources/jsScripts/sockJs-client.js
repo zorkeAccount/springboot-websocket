@@ -19,7 +19,8 @@ sock.onclose = function(){
 };
 function sayMarco(){
     console.log("Sending hello to wsserver!");
-    sock.send("Hello");
+    // sock.send("{\"reqKey\": \"Hello\",\"resResult\":null}");
+    sock.send("{\"reqKey\": \"HelloSecond\",\"resResult\":null}");
 };
 
 //Step3: 启动WsServerApplication项目，以debug模式执行，在Chrome - console中执行Step2中的代码，可以看到MarcoHandler中的断点处效果

@@ -42,6 +42,26 @@
 			<artifactId>lombok</artifactId>
 		</dependency>
 
+		<!--gson for JsonUtils-->
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<!--<version>2.1</version>-->
+		</dependency>
+		<dependency>
+			<groupId>net.sf.json-lib</groupId>
+			<artifactId>json-lib</artifactId>
+			<version>2.4</version>
+			<!--解决maven无法下载json-lib的问题-->
+			<classifier>jdk15</classifier>
+			<exclusions>
+				<exclusion>
+					<artifactId>ezmorph</artifactId>
+					<groupId>net.sf.ezmorph</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
 	</dependencies>
 
 	<build>
