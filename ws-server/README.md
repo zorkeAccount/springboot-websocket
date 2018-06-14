@@ -9,7 +9,7 @@
 </br>输入密码 - 如admin123 
 </br>其他参数 - 留空即可，确认即可在当前目录生成 keystore.p12 文件，并替换掉src/main/resources下的keystore.p12文件
 2. IDE中直接run执行WsServerApplication. java或者mvn install and java -jar ws-server-0.0.1-SNAPSHOT.jar启动即可
-3. chrome浏览器控制台console中引入sockjs.min.js文件，命令如下</br>
+3. chrome浏览器发送http请求https://localhost:8443/wsserver，，建立websocket连接；并且在该页面的控制台console中引入sockjs.min.js文件，命令如下</br>
 var script = document.createElement('script');</br>
 script.src = "https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js";</br>
 document.getElementsByTagName('head')[0].appendChild(script);
